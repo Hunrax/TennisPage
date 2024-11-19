@@ -1,0 +1,41 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="newPlayer">
+    <div>
+        <h1> Add a player </h1>
+        @if (!playerIdIfIsEdit) {
+            <p>
+                <label for="name">Path to the photo (optional)</label>
+                <input type="text" id="photo" name="photo" formControlName="photo"/>
+            </p>
+        }
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" formControlName="name"/>
+        </p>
+        <p>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" formControlName="country" />
+        </p>
+        <p>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" formControlName="age" />
+        </p>
+        <p>
+            <label for="slams">Grand slams won</label>
+            <input type="number" id="slams" name="slams" formControlName="slams" />
+        </p>
+        <p>Active</p>
+        <p>
+            <label for="active-yes">Yes</label>
+            <input type="radio" id="active-yes" name="active" formControlName="active" value="Yes"/>
+            
+            <label for="active-no">No</label>
+            <input type="radio" id="active-no" name="active" formControlName="active" value="No"/>
+        </p>
+        <p>
+            <button (click)="onCancel()">Cancel</button>
+            <button type="submit">Submit</button>
+        </p>
+    </div>
+</form>
+
+

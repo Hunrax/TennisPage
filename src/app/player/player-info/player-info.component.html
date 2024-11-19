@@ -1,0 +1,21 @@
+
+<div>
+    <h1>Player Info</h1>
+    <div class="photoContainer">
+        <img [src]="player!.photo" [alt]="player!.name" class="playerPhoto" />
+        <img [src]="countryToFlag()" alt="Flag" class="flagPhoto" />
+    </div>
+    
+    <p>Name: {{player!.name}}</p>
+    <p>Country: {{player!.country}}</p>
+    <p>Age: {{player!.age}}</p>
+    <p>Grand slams won: {{player!.slams}}</p>
+    <p>Active: {{player!.active}}</p>
+    <p>
+        <button (click)="onEditInfo()">Edit Info</button>
+        <button (click)="onEditPhoto()">Edit Photo</button>
+        <button (click)="onDelete()">Delete</button>
+        <button (click)="onBackToList()">Back</button>
+    </p>
+</div>
+

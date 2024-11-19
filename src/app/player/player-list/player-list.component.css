@@ -1,0 +1,124 @@
+table {
+    max-width: 50rem;
+    margin: 0.2rem auto;
+    padding: 1rem;
+    table-layout: fixed;
+    border-spacing: 0rem 1rem;
+    width: 100vw;
+    text-align: center;
+  }
+  
+table thead {
+  font-size: 2rem;
+  color: #f3f3f3;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+table tbody {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 40%;
+  border: 0.2rem rgb(91, 10, 122);
+  border-style: solid;
+}
+
+button:hover {
+  cursor:pointer;
+  border: 0.2rem solid;
+  border-color: #f3f3f3;
+}
+
+button {
+  background-color: #62b2e7;
+  color: #4340ee;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 15%;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.addPlayer {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  border-radius: 15%;
+  color: #f3f3f3;
+}
+
+td:first-child {
+  border-left-style: solid;
+  border-color: #62b2e7;
+  border-top-left-radius: 0.5rem;  
+  border-bottom-left-radius: 0.5rem; 
+}
+td:last-child {
+  border-right-style: solid;
+  border-color: #62b2e7;
+  border-bottom-right-radius: 0.5rem; 
+  border-top-right-radius: 0.5rem;  
+}
+
+td {
+  border-top: solid #62b2e7;
+  border-bottom: solid #62b2e7;
+}
+
+.playerRow:hover {
+  background-color: #62b2e7;
+  border-radius: 20%;
+  cursor:pointer;
+}
+
+#flag {
+  border: none;
+  width: 25%;
+  height: 25%;
+  border-radius: 10%;
+}
+
+#sortDirection {
+  color: #f3f3f3;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 12%;
+  padding: 0.7rem 0rem;
+  background-color: #62b2e7;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.custom-select select:hover {
+  background-color: #62b2e7;
+  border: 0.3rem solid #f3f3f3; 
+}
+
+.custom-select option {
+  background: #62b2e7;
+  color: #f3f3f3;
+  font-weight: bold;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

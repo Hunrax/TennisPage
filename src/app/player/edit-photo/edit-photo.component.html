@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="editPhoto">
+    <div>
+        <h1> Edit player photo </h1>
+        <img [src]="player?.photo" [alt]="player?.name" />
+            <p>
+                <label for="name">Path to the photo (optional)</label>
+                <input type="text" id="photo" name="photo" formControlName="photo"/>
+            </p>
+        <p>
+            <button (click)="onCancel()">Cancel</button>
+            <button type="submit">Submit</button>
+        </p>
+    </div>
+</form>
